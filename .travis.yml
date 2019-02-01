@@ -12,5 +12,5 @@ matrix:
         - php: nightly
 
 before_script:
-    - if [[ $TRAVIS_PHP_VERSION = nightly* ]]; then pecl install -f xdebug-beta; fi
+    - if [[ $TRAVIS_PHP_VERSION = nightly* ]]; then pecl install -f xdebug-2.7.0beta1; fi
     - composer install
